@@ -1,10 +1,11 @@
 import { syakod } from '@syakod/eslint-config'
 
 export default syakod(
+  {},
   {
-    rules: [],
-  },
-  {
+    vue: true,
+    prettier: true,
+    markdown: true,
     unocss: false,
   },
 )
