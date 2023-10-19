@@ -1,0 +1,38 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "carot-admin 是基于 gin、JWT 和 RBAC 的 go 后台管理系统",
+        "title": "carot-admin 后端 API 文档",
+        "termsOfService": "https://github.com/syakod",
+        "contact": {
+            "name": "syakod",
+            "url": "https://github.com/carot-admin",
+            "email": "hi@syakod.com"
+        },
+        "license": {
+            "name": "MIT",
+            "url": "https://github.com/syakod/carot-admin/blob/main/LICENSE"
+        },
+        "version": "1.0.0"
+    },
+    "host": "localhost:8080",
+    "basePath": "/api/v1",
+    "paths": {
+        "/hello": {
+            "get": {
+                "responses": {}
+            }
+        }
+    },
+    "securityDefinitions": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    },
+    "externalDocs": {
+        "description": "OpenAPI",
+        "url": "https://swagger.io/resources/open-api/"
+    }
+}
