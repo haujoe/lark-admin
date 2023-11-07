@@ -8,6 +8,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
+import UnoCSS from 'unocss/vite'
 import progress from 'vite-plugin-progress'
 
 // https://vitejs.dev/config/
@@ -90,6 +91,7 @@ export default defineConfig(({ mode }) => {
         dts: 'src/components.d.ts',
         resolvers: [ElementPlusResolver()],
       }),
+      UnoCSS(),
       progress(),
     ],
   }
