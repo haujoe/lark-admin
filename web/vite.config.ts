@@ -5,12 +5,14 @@ import { defineConfig } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import progress from 'vite-plugin-progress'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
+    progress(),
     AutoImport({
       imports: ['vue', 'vue-router'],
       dts: 'src/auto-imports.d.ts',
