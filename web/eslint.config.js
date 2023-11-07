@@ -1,12 +1,7 @@
 import { syakod } from '@syakod/eslint-config'
 
-export default syakod(
-  {
+export default syakod({
+  rules: {
+    'unicorn/prefer-top-level-await': 'off',
   },
-  {
-    vue: true,
-    prettier: true,
-    markdown: true,
-    unocss: false,
-  },
-)
+})
