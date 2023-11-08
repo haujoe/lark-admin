@@ -12,7 +12,7 @@ import { loadDirectives } from '@/directives'
 import 'virtual:uno.css'
 import '@/styles/index.scss'
 
-const app = createApp(App)
+const app: any = createApp(App)
 
 /** 加载自定义指令 */
 loadDirectives(app)
